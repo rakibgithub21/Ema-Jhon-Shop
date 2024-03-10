@@ -1,5 +1,5 @@
 
-const Product = ({ product }) => {
+const Product = ({ product, handleAddToCart }) => {
     console.log(product);
     const { img, name, price, ratings, seller } = product
     return (
@@ -13,7 +13,7 @@ const Product = ({ product }) => {
                     <p>Ratings: {ratings} <span>Start</span></p>
                 </div>
                 <div className="bg-[#FFE0B3] rounded-xl">
-                    <button className="w-full p-2 font-semibold">Buy Now</button>
+                    <button onClick={()=>handleAddToCart(product)} className="w-full p-2 font-semibold">Buy Now</button>
                 </div>
             </div>
         </div>
