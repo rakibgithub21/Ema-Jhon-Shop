@@ -1,6 +1,5 @@
 
 const Product = ({ product, handleAddToCart }) => {
-    console.log(product);
     const { img, name, price, ratings, seller } = product
     return (
         <div className="card  bg-base-100 shadow-xl">
